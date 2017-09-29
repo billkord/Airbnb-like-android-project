@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#DEEEE1"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="10dp" >
+
+    <LinearLayout
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:orientation="vertical"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp" >
+
+        <EditText
+        android:id="@+id/Username_SIS"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:background="#ffffff"
+        android:hint="@string/Username_editText_hint_SIS"
+        android:inputType="text"
+        android:padding="10dp"
+        android:maxLines="1"
+        android:textColor="#222222"
+        android:textColorHint="#999999" />
+
+        <EditText
+        android:id="@+id/Password_SIS"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:background="#ffffff"
+        android:hint="@string/Password_editText_hint_SIS"
+        android:inputType="textPassword"
+        android:padding="10dp"
+        android:maxLines="1"
+        android:textColor="#222222"
+        android:textColorHint="#999999" />
+
+        <Button
+        android:id="@+id/LogInBtn_SIS"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dip"
+        android:background="#eceef1"
+        android:text="@string/Login_button_text_SIS"
+        android:textColor="#999999" />
+
+        <Button
+        android:id="@+id/RegisterBtn_SIS"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dip"
+        android:background="@null"
+        android:text="@string/btn_link_to_register"
+        android:textAllCaps="false"
+        android:textColor="#999999"
+        android:textSize="15sp" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/SetIp_SIS"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dip"
+        android:background="@null"
+        android:text=""
+        android:textAllCaps="false"
+        android:textColor="#999999"
+        android:textSize="15sp" />
+
+</LinearLayout>

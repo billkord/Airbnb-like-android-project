@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/RelativeLayout_MS"
+    tools:context="gr.uoa.di.ecommerce.myairbnb.MainScreenHost"
+    android:orientation="vertical"
+    android:weightSum="1"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#DEEEE1">
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/PlusBtn_MHS"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_plus"
+        app:elevation="4dp"
+        app:borderWidth="0dp"
+        app:fabSize="mini"
+        app:backgroundTint="#33B5E5"
+        app:rippleColor="#33B5E5"
+        android:layout_below="@+id/RoomsListView_MSH"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="18dp">
+
+    </android.support.design.widget.FloatingActionButton>
+
+    <ListView
+        android:id="@+id/RoomsListView_MSH"
+        android:layout_width="wrap_content"
+        android:layout_height="380dp"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="8dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
+
+    <ImageButton
+        android:id="@+id/Profile_MSH"
+        android:layout_width="28dp"
+        android:layout_height="28dp"
+        android:background="@drawable/profile"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="58dp"
+        android:contentDescription="@string/userInfoIcon"
+        android:layout_alignTop="@+id/Messages_MSH"
+        android:layout_toStartOf="@+id/Messages_MSH" />
+
+    <ImageButton
+        android:id="@+id/Messages_MSH"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/message"
+        android:background="@null"
+        android:layout_marginBottom="30dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:contentDescription="@string/ShowMessages" />
+
+    <ImageButton
+        android:id="@+id/User_MSH"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:background="@drawable/user"
+        android:contentDescription="@string/Host_button_text_MSH"
+        android:layout_alignBottom="@+id/Messages_MSH"
+        android:layout_toEndOf="@+id/Messages_MSH"
+        android:layout_marginStart="58dp"
+        android:layout_marginBottom="6dp"/>
+
+
+</RelativeLayout>

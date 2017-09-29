@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="gr.uoa.di.ecommerce.myairbnb.AreaPresentationScreen"
+    android:orientation="vertical"
+    android:background="#DEEEE1">
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/ViewPager_APS"
+        android:layout_width="wrap_content"
+        android:layout_height="188dp"
+        android:scrollbars="horizontal">
+
+    </android.support.v4.view.ViewPager>
+
+    <ScrollView
+        android:id="@+id/Scrollview_APS"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ViewPager_APS"
+        android:layout_above="@+id/ReserveBtn_APS"
+        android:layout_marginTop="6dp"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        android:layout_marginBottom="16dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/PeopleRated"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"/>
+
+            <RatingBar
+                android:id="@+id/RatingBar_APS"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:numStars="5"
+                android:isIndicator="true"
+                android:clickable="false"
+                android:theme="@style/RatingBar"/>
+
+            <EditText
+                android:id="@+id/RateText_APS"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"/>
+
+            <Button
+                android:id="@+id/RateBtn_APS"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:visibility="gone"
+                android:background="@null"
+                android:textAllCaps="false"
+                android:text="@string/Rate"/>
+
+            <TextView
+                android:id="@+id/HostName_APS"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:textSize="21sp"
+                android:onClick="hostInfoClick"
+                android:clickable="true"
+                android:textColor="#0000EE"/>
+
+            <TextView
+                android:id="@+id/RoomName_APS"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:textSize="21sp"/>
+
+            <TextView
+                android:id="@+id/Country_APS"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:textSize="21sp"/>
+
+            <TextView
+                android:id="@+id/City_APS"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:textSize="21sp"/>
+
+            <TextView
+                android:id="@+id/Address_APS"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:textSize="21sp"/>
+
+            <fragment
+                android:id="@+id/Map_APS"
+                class="com.google.android.gms.maps.SupportMapFragment"
+                android:layout_width="match_parent"
+                android:layout_height="185dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="6dp"/>
+
+            <TextView
+                android:id="@+id/DateFrom_APS"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:textSize="21sp"/>
+
+            <TextView
+                android:id="@+id/DateTo_APS"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:textSize="21sp"/>
+
+            <TextView
+                android:id="@+id/MaxVisitors_APS"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:textSize="21sp"/>
+
+            <TextView
+                android:id="@+id/MinPrice_APS"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:textSize="21sp"/>
+
+            <TextView
+                android:id="@+id/RoomType_APS"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:textSize="21sp"/>
+
+            <TextView
+                android:id="@+id/Rules_APS"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="21sp"/>
+
+            <TextView
+                android:id="@+id/Description_APS"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="21sp"
+                android:layout_marginTop="24dp"/>
+
+            <TextView
+                android:id="@+id/Area_APS"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:textSize="21sp"
+                android:layout_marginTop="24dp"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <Button
+        android:id="@+id/ContactBtn_APS"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="55dp"
+        android:layout_marginBottom="16dp"
+        android:textAllCaps="false"
+        android:text="@string/ContactBtn_APS"/>
+
+    <Button
+        android:id="@+id/ReserveBtn_APS"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="55dp"
+        android:layout_marginBottom="16dp"
+        android:textAllCaps="false"
+        android:text="@string/ReserveBtn_APS"/>
+
+</RelativeLayout>

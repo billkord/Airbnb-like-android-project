@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/RelativeLayout_MS"
+    tools:context="gr.uoa.di.ecommerce.myairbnb.MainScreen"
+    android:orientation="vertical"
+    android:weightSum="1"
+    android:background="#DEEEE1">
+
+    <ImageButton
+        android:id="@+id/SearchBar_MS"
+        android:layout_width="37dp"
+        android:layout_height="37dp"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="6dp"
+        android:background="@drawable/search_icon" />
+
+    <ImageButton
+        android:id="@+id/SignOut_MS"
+        android:layout_width="37dp"
+        android:layout_height="37dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:background="@drawable/signout_icon" />
+
+    <ListView
+        android:id="@+id/RoomsListView_MS"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/SearchBar_MS"
+        android:layout_marginBottom="110dp"
+        android:layout_marginTop="6dp"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="8dp" />
+
+    <ImageButton
+        android:id="@+id/Profile_MS"
+        android:layout_width="28dp"
+        android:layout_height="28dp"
+        android:background="@drawable/profile"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="58dp"
+        android:contentDescription="@string/userInfoIcon"
+        android:layout_alignTop="@+id/Messages_MS"
+        android:layout_toStartOf="@+id/Messages_MS" />
+
+    <ImageButton
+        android:id="@+id/Messages_MS"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/message"
+        android:background="@null"
+        android:layout_marginBottom="30dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:contentDescription="@string/ShowMessages" />
+
+    <ImageButton
+        android:id="@+id/Host_MS"
+        android:layout_width="37dp"
+        android:layout_height="37dp"
+        android:background="@drawable/host"
+        android:contentDescription="@string/Host_button_text_MS"
+        android:layout_alignBottom="@+id/Profile_MS"
+        android:layout_toEndOf="@+id/Messages_MS"
+        android:layout_marginStart="58dp" />
+
+
+
+
+</RelativeLayout>

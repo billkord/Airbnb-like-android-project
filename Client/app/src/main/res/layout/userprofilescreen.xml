@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#DEEEE1"
+    android:weightSum="1">
+
+    <ScrollView
+        android:id="@+id/ScrollView_UPS"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:paddingTop="10dp"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/Username_UPS"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_weight="0.10"
+                android:textSize="21sp"
+                android:text="@string/Username_textView_text"/>
+
+            <TextView
+                android:id="@+id/Password_UPS"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_weight="0.10"
+                android:textSize="21sp"
+                android:text="@string/Password_textView_text"/>
+
+            <TextView
+                android:id="@+id/FirstName_UPS"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_weight="0.10"
+                android:textSize="21sp"
+                android:text="@string/FirstName_textView_text"/>
+
+            <TextView
+                android:id="@+id/LastName_UPS"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_weight="0.10"
+                android:textSize="21sp"
+                android:text="@string/LastName_textView_text"/>
+
+            <TextView
+                android:id="@+id/Email_UPS"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_weight="0.10"
+                android:textSize="21sp"
+                android:text="@string/Email_textView_text"/>
+
+            <TextView
+                android:id="@+id/Telephone_UPS"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:textSize="21sp"
+                android:layout_weight="0.10"
+                android:text="@string/Telephone_textView_text"/>
+
+            <CheckBox
+                android:id="@+id/Host_UPS"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="@string/Host_checkBox_text"
+                android:enabled="false"/>
+
+            <ImageView
+                android:id="@+id/UserImage_UPS"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:src="@mipmap/defaultimage"
+                android:contentDescription="@string/ImageProfile_description"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="10dp"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:id="@+id/SaveButton_UPS"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Done_button_name_UPS"
+            android:textAllCaps="false"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="35dp"
+            android:layout_marginBottom="15dp"/>
+
+        <Button
+            android:id="@+id/EditButton_UPS"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Edit_button_name_UPS"
+            android:textAllCaps="false"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="35dp"
+            android:layout_marginBottom="15dp"/>
+
+    </RelativeLayout>
+
+</LinearLayout>

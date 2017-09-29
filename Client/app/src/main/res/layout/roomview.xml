@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:descendantFocusability="blocksDescendants">
+
+    <ImageView
+        android:id="@+id/RoomImage"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:contentDescription="@string/RoomImage"
+        android:paddingStart="15dp"
+        android:paddingTop="15dp"
+        app:srcCompat="@android:drawable/ic_menu_gallery" />
+
+    <TextView
+        android:id="@+id/RoomName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="top|start"
+        android:paddingStart="15dp"
+        android:paddingTop="20dp"
+        android:text="@string/Room_name"
+        android:layout_alignParentTop="true"
+        android:layout_toEndOf="@+id/RoomImage" />
+
+    <TextView
+        android:id="@+id/RoomDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="140dp"
+        android:layout_below="@+id/RoomName"
+        android:layout_toEndOf="@id/RoomImage"
+        android:paddingStart="15dp"
+        android:paddingTop="32dp"
+        android:text="@string/Room_description" />
+
+    <RatingBar
+        android:id="@+id/RatingBar"
+        style="@style/roomRatingBar"
+        android:layout_width="185dp"
+        android:layout_height="32dp"
+        android:foregroundGravity="center_vertical|center_horizontal"
+        android:paddingStart="30dp"
+        android:numStars="5"
+        android:theme="@style/RatingBar"
+        android:scaleX="0.4"
+        android:scaleY="0.4"
+        android:stepSize="1.0"
+        android:transformPivotX="0dp"
+        android:layout_alignBottom="@+id/RoomImage"
+        android:layout_toEndOf="@+id/RoomImage"
+        android:clickable="false"
+        android:focusableInTouchMode="false"
+        android:focusable="false"
+        android:isIndicator="true" />
+
+
+</RelativeLayout>

@@ -1,0 +1,183 @@
+<resources>
+    <string name="app_name">nBNB</string>
+    <string name="SignInScreen_name">Welcome To myAirbnb</string>
+    <string name="SignUpScreen_name">Sign Up</string>
+    <string name="MainScreen_name">Home</string>
+    <string name="EditProfileScreen_name">Edit My Profile</string>
+    <string name="UserProfileScreen_name">My Profile</string>
+    <string name="MainScreenHost_name">My Rooms</string>
+    <string name="AddRoomScreen_name">Room</string>
+    <string name="AreaPresentationScreen_name">Room Inspection</string>
+    <string name="MSGScreen_name">Messages</string>
+    <string name="MessageViewScreen_name">Message</string>
+    <string name="SendMessageScreen_name">Send Message</string>
+    <string name="HostPresentationScreen_name">Host Inspection</string>
+    <string name="CustomPhotoGalleryScreen_name">My Galery</string>
+
+    <!--UserProfileScreen Strings-->
+        <string name="Username_textView_text">Username: </string>
+        <string name="Password_textView_text">Password: </string>
+        <string name="FirstName_textView_text">First Name: </string>
+        <string name="LastName_textView_text">Last Name: </string>
+        <string name="Email_textView_text">Email: </string>
+        <string name="Telephone_textView_text">Phone: </string>
+        <string name="Edit_button_name_UPS">Edit</string>
+        <string name="Done_button_name_UPS">Save</string>
+
+    <!--SignupScreen Strings-->
+        <string name="Username_editText_hint_SUS">*Username</string>
+        <string name="Password_editText_hint_SUS">*Password</string>
+        <string name="ValidatePassword_editText_hint_SUS">*Validate Password</string>
+        <string name="FirstName_editText_hint_SUS">*First Name</string>
+        <string name="LastNAme_editText_hint_SUS">*Last Name</string>
+        <string name="Email_editText_hint_SUS">*Email</string>
+        <string name="Telephone_editText_hint_SUS">Telephone</string>
+        <string name="Host_checkBox_text">Host</string>
+        <string name="submit_button_name">Submit</string>
+        <string name="image_textView_SUS">select your image</string>
+        <string name="processMenu_title">Succeed</string>
+        <string name="processMenu_msg">Registration Completed</string>
+        <string name="processMenu_button">OK</string>
+        <string name="out_of_memory_text">Too big image. Try a smaller one!</string>
+        <string name="incorrect_password">Password mismatch!</string>
+        <string name="incorrect_password_lenght">Password must be at least 6 characters!</string>
+        <string name="incorrect_telephone">Telephone number is incorrect!</string>
+        <string name="incorrect_email">Email is incorrect!</string>
+
+    <!--SignInScreen Strings-->
+        <string name="Username_editText_hint_SIS">Username</string>
+        <string name="Password_editText_hint_SIS">Password</string>
+        <string name="Login_button_text_SIS">LOGIN</string>
+        <string name="AlertDialogTitle_SIS">Error</string>
+        <string name="btn_link_to_register">Not a member? Sign up now.</string>
+
+    <!--FirstENtranceScreen Strings-->
+        <string name="AlertDialog_title_FES">Permission</string>
+        <string name="Storage_permission_text_FES">myAirBNB ask to access your storage</string>
+        <string name="AlertDialog_yes_button_FES">allow</string>
+        <string name="AlertDialog_no_button_FES">deny</string>
+        <string name="SignUp_button_text_FES">Sign Up</string>
+        <string name="SignIn_button_text_FES">Sign In</string>
+
+    <!--EditProfileScreen Strings-->
+        <string name="Username_editText_hint_EPS">Username</string>
+        <string name="Password_editText_hint_EPS">New password</string>
+        <string name="ValidatePassword_editText_hint_EPS">Validate password</string>
+        <string name="FirstName_editText_hint_EPS">First Name</string>
+        <string name="LastNAme_editText_hint_EPS">Last Name</string>
+        <string name="Email_editText_hint_EPS">Email</string>
+        <string name="Telephone_editText_hint_EPS">Telephone</string>
+
+        <string name="image_textView_EPS">change your image</string>
+        <string name="SaveChanges_button_name_EPS">Done</string>
+
+    <!--MainScreen Strings-->
+        <string name="Host_button_text_MS">Host</string>
+        <string name="Room_deletion_text_MS">Are you sure you want to delete this room?</string>
+        <string name="AlertDialog_yes_button_MS">Yes</string>
+        <string name="AlertDialog_no_button_MS">No</string>
+
+    <!--MainScreenHost Strings-->
+        <string name="Host_button_text_MSH">User</string>
+        <string name="processMenuReservation_title">Reservations for</string>
+        <string name="Contact_MSH">Contact</string>
+        <string name="cancel_MSH">Cancel reservation</string>
+        <string name="cancellation_txt0_MSH">Dear</string>
+        <string name="cancellation_txt1_MSH">I am sorry to inform you that you reservation at</string>
+        <string name="cancellation_txt2_MSH">from:</string>
+        <string name="cancellation_txt3_MSH">to:</string>
+        <string name="cancellation_txt4_MSH">has been cancelled due to unfortunate circumstances.\nThank you for your understanding</string>
+        <string name="user_MSH">User</string>
+        <string name="userInformed_MSH">has been Informed!</string>
+
+    <!--RoomView Strings-->
+        <string name="RoomImage">Room Image</string>
+        <string name="Room_description">Room Description</string>
+        <string name="Room_name">Room Name</string>
+
+    <!--AddRoomScreen Strings-->
+        <string name="RoomName_ARS">Room Name</string>
+        <string name="Country_ARS">Country</string>
+        <string name="City_ARS">City</string>
+        <string name="Address_ARS">Address</string>
+        <string name="DateFrom_ARS">Beginning Date</string>
+        <string name="DateTo_ARS">End Date</string>
+        <string name="MaxVisitors_ARS">Maximum Visitors</string>
+        <string name="MinPrice_ARS">Minimum Price</string>
+        <string name="RoomType_ARS">Room Type (apartment, studio, &#8230; )</string>
+        <string name="Rules_ARS">Rules (smoking, pets, &#8230; )</string>
+        <string name="Description_ARS">Description (Number of bedrooms, baths, &#8230; )</string>
+        <string name="Area_ARS">Area (square m)</string>
+        <string name="SaveBtn_ARS">Save</string>
+        <string name="textView_image_ARS">Select image for room</string>
+        <string name="AlertDialog_title_ARS">Permission</string>
+        <string name="Storage_permission_text_ARS">myAirBNB ask to access location permission</string>
+
+    <!--AreaPresentationScreen Strings-->
+        <string name="RoomName_APS">Room Name:</string>
+        <string name="HostName_APS">Host Name:</string>
+        <string name="Country_APS">Country:</string>
+        <string name="City_APS">Country:</string>
+        <string name="Address_APS">Address:</string>
+        <string name="DateFrom_APS">Beginning Date:</string>
+        <string name="DateTo_APS">End Date:</string>
+        <string name="MaxVisitors_APS">Maximum Visitors:</string>
+        <string name="MinPrice_APS">Minimum Price:</string>
+        <string name="RoomType_APS">Room Type:</string>
+        <string name="Rules_APS">Rules:</string>
+        <string name="Description_APS">Description:</string>
+        <string name="Area_APS">Area:</string>
+        <string name="ContactBtn_APS">Contact</string>
+        <string name="ReserveBtn_APS">Book</string>
+        <string name="Rate">Rate</string>
+        <string name="PeopleRated">Rates:</string>
+    
+    <!--HostPresentationScreen Strings-->
+        <string name="FirstName_HPS">First Name</string>
+        <string name="LastName_HPS">Last Name</string>
+
+    <!--SendMessageScreen Strings-->
+        <string name="Message_SMS">Type your message &#8230;</string>
+        <string name="To_SMS">To:</string>
+        <string name="Send_SMS">Send</string>
+
+    <!--MessagesScreen Strings-->
+        <string name="Message">Message</string>
+        <string name="Message_delete_MS">Are you sure you want to delete this message?</string>
+
+    <!--MessagesInflator Strings-->
+        <string name="From">From:</string>
+        <string name="To">To:</string>
+
+    <!--MessageViewScreen Strings-->
+        <string name="MessageReply">Reply</string>
+
+    <!--AreaPresentationScreen Strings-->
+        <string name="AlertDialogTitle">Reservation</string>
+        <string name="AlertDialogMessage">Room is available at given dates. Do you want to procceed to reservation?</string>
+
+    <!--SearchPopUp Strings-->
+        <string name="country_popUp">Country</string>
+        <string name="city_popUp">City</string>
+        <string name="address_APS">Address</string>
+        <string name="dateFrom_APS">Beginning Date*</string>
+        <string name="dateTo_APS">End Date*</string>
+        <string name="people_APS">People*</string>
+        <string name="search_popUp">Search</string>
+        <string name="required_fields_APS">*Required fields</string>
+
+    <string name="ToastFillAllReq">Please fill all the required fields</string>
+    <string name="userInfoIcon">Show Profile</string>
+    <string name="ShowMessages">Show Messages</string>
+    <string name="longClickDelete">Delete</string>
+    <string name="longClickEdit">Edit</string>
+    <string name="longClickDates">Reservations</string>
+    <string name="pricePerDay">Price per day: </string>
+    <string name="address">Address: </string>
+    <string name="ImageRotateError">Can not rotate that big image</string>
+    <string name="ImageProfile_description">Image</string>
+    <string name="Map_error">Error loading map</string>
+    <string name="Connectioon_not_found">Load correct content failed.</string>
+    <string name="Ok">OK</string>
+
+</resources>

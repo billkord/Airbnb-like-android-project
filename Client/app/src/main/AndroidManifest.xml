@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="gr.uoa.di.ecommerce.myairbnb">
+
+    <!--Permissions-->
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme" >
+
+        <meta-data
+        android:name="com.google.android.gms.version"
+        android:value="@integer/google_play_services_version" />
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+
+        <activity
+            android:name=".SignInScreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".MainScreen"
+            android:label="@string/MainScreen_name"
+            android:windowSoftInputMode="adjustPan" >
+        </activity>
+
+        <activity
+            android:name=".SignUpScreen"
+            android:label="@string/SignUpScreen_name"
+            android:windowSoftInputMode="adjustPan" >
+        </activity>
+
+        <activity
+            android:name=".UserProfileScreen"
+            android:label="@string/UserProfileScreen_name"
+            android:windowSoftInputMode="adjustPan" >
+        </activity>
+
+        <activity
+            android:name=".EditProfileScreen"
+            android:label="@string/EditProfileScreen_name"
+            android:windowSoftInputMode="adjustPan" >
+        </activity>
+
+        <activity
+            android:name=".MainScreenHost"
+            android:label="@string/MainScreenHost_name"
+            android:windowSoftInputMode="adjustPan" >
+        </activity>
+
+        <activity
+            android:name=".AddRoomScreen"
+            android:label="@string/AddRoomScreen_name"
+            android:windowSoftInputMode="adjustPan" >
+        </activity>
+
+        <activity
+            android:name=".AreaPresentationScreen"
+            android:label="@string/AreaPresentationScreen_name"
+            android:windowSoftInputMode="adjustPan" >
+        </activity>
+
+        <activity
+            android:name=".MessagesScreen"
+            android:label="@string/MSGScreen_name"
+            android:windowSoftInputMode="adjustPan" >
+        </activity>
+
+        <activity
+            android:name=".MessageViewScreen"
+            android:label="@string/MessageViewScreen_name"
+            android:windowSoftInputMode="adjustPan" >
+        </activity>
+
+        <activity
+            android:name=".SendMessageScreen"
+            android:label="@string/SendMessageScreen_name"
+            android:windowSoftInputMode="adjustPan" >
+        </activity>
+
+        <activity
+            android:name=".HostPresentationScreen"
+            android:label="@string/HostPresentationScreen_name"
+            android:windowSoftInputMode="adjustPan" >
+        </activity>
+
+        <activity
+            android:name=".SetIP"
+            android:label="@string/HostPresentationScreen_name"
+            android:windowSoftInputMode="adjustPan" >
+        </activity>
+
+        <activity
+            android:name=".CustomPhotoGalleryScreen"
+            android:label="@string/CustomPhotoGalleryScreen_name"
+            android:windowSoftInputMode="adjustPan" >
+        </activity>
+
+
+
+    </application>
+
+</manifest>

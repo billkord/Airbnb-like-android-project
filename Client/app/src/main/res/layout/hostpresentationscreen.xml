@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="gr.uoa.di.ecommerce.myairbnb.HostPresentationScreen"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#DEEEE1"
+    android:paddingStart="6dp"
+    android:paddingEnd="6dp"
+    android:paddingTop="20dp"
+    android:paddingBottom="6dp">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/CardView_HPS"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginStart="6dp"
+        android:layout_marginBottom="4dp"
+        android:elevation="12dp"
+        app:cardCornerRadius="40dp"
+        android:innerRadius="0dp"
+        android:shape="ring"
+        android:thicknessRatio="1.9">
+        <ImageView
+            android:id="@+id/UserImage_HPS"
+            android:layout_height="70dp"
+            android:layout_width="match_parent"
+            android:src="@mipmap/ic_defaultimage"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:contentDescription="@string/ImageProfile_description">
+        </ImageView>
+    </android.support.v7.widget.CardView>
+
+    <TextView
+        android:id="@+id/FirstName_HPS"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/CardView_HPS"
+        android:layout_alignTop="@+id/CardView_HPS"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:textSize="18sp"
+        android:text="@string/FirstName_HPS"/>
+
+    <TextView
+        android:id="@+id/LastName_HPS"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@+id/CardView_HPS"
+        android:layout_below="@+id/FirstName_HPS"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:textSize="18sp"
+        android:text="@string/LastName_HPS"/>
+
+    <TextView
+        android:id="@+id/Telephone_HPS"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/CardView_HPS"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="8dp"
+        android:textSize="18sp"
+        android:text="@string/Telephone_textView_text"/>
+
+    <ListView
+        android:id="@+id/RatesListview_HPS"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/Telephone_HPS">
+
+    </ListView>
+
+
+</RelativeLayout>

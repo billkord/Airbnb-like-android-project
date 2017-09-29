@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="#DEEEE1">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="296dp"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/Password_EPS"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPassword"
+                android:hint="@string/Password_editText_hint_EPS" />
+
+            <EditText
+                android:id="@+id/ValidatePassword_EPS"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPassword"
+                android:hint="@string/ValidatePassword_editText_hint_EPS" />
+
+            <EditText
+                android:id="@+id/FirstName_EPS"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:hint="@string/FirstName_editText_hint_EPS" />
+
+            <EditText
+                android:id="@+id/LastName_EPS"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:hint="@string/LastNAme_editText_hint_EPS" />
+
+            <EditText
+                android:id="@+id/Email_EPS"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textEmailAddress"
+                android:hint="@string/Email_editText_hint_EPS" />
+
+            <EditText
+                android:id="@+id/Telephone_EPS"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="phone"
+                android:hint="@string/Telephone_editText_hint_EPS" />
+
+            <CheckBox
+                android:id="@+id/Host_EPS"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/Host_checkBox_text" />
+
+        </LinearLayout>
+    </ScrollView>
+
+    <RelativeLayout
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="3.75"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/sourceimage_EPS"
+            android:layout_width="fill_parent"
+            android:layout_height="30dp"
+            android:layout_marginStart="10dp"
+            android:hint="@string/image_textView_EPS"
+            android:textSize="15sp" />
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/selectImageButton_EPS"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/sourceimage_EPS"
+            android:layout_marginStart="4dp"
+            android:src="@drawable/ic_plus"
+            app:backgroundTint="@color/colorPrimary"
+            app:borderWidth="0dp"
+            app:elevation="4dp"
+            app:fabSize="mini"
+            app:rippleColor="@color/colorPrimary">
+
+        </android.support.design.widget.FloatingActionButton>
+
+        <ImageView
+            android:id="@+id/UserImage_EPS"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginStart="41dp"
+            android:contentDescription="@string/ImageProfile_description"
+            android:src="@mipmap/defaultimage"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginBottom="16dp"/>
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/DoneButton_EPS"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAllCaps="false"
+        android:textSize="8pt"
+        android:layout_weight="0.06" />
+
+</LinearLayout>

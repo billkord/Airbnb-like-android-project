@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="#DEEEE1">
+
+    <ScrollView
+        android:id="@+id/Scrollview_ARS"
+        android:layout_width="match_parent"
+        android:layout_height="370dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/RoomName_ARS"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:gravity="top|start"
+                android:hint="@string/RoomName_ARS" />
+
+            <EditText
+                android:id="@+id/Country_ARS"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:gravity="top|start"
+                android:hint="@string/Country_ARS" />
+
+            <EditText
+                android:id="@+id/City_ARS"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:gravity="top|start"
+                android:hint="@string/City_ARS" />
+
+            <EditText
+                android:id="@+id/Address_ARS"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="top|start"
+                android:hint="@string/Address_ARS" />
+
+            <fragment
+                android:id="@+id/Map_ARS"
+                class="com.google.android.gms.maps.SupportMapFragment"
+                android:layout_width="match_parent"
+                android:layout_height="185dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="6dp"/>
+
+            <EditText
+                android:id="@+id/DateFrom_ARS"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="none"
+                android:focusable="false"
+                android:clickable="true"
+                android:gravity="top|start"
+                android:hint="@string/DateFrom_ARS" />
+
+            <EditText
+                android:id="@+id/DateTo_ARS"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="none"
+                android:focusable="false"
+                android:clickable="true"
+                android:gravity="top|start"
+                android:hint="@string/DateTo_ARS" />
+
+            <EditText
+                android:id="@+id/MaxVisitors_ARS"
+                android:inputType="number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="top|start"
+                android:hint="@string/MaxVisitors_ARS" />
+
+            <EditText
+                android:id="@+id/MinPrice_ARS"
+                android:inputType="numberDecimal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="top|start"
+                android:hint="@string/MinPrice_ARS" />
+
+            <EditText
+                android:id="@+id/RoomType_ARS"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:gravity="top|start"
+                android:hint="@string/RoomType_ARS" />
+
+            <EditText
+                android:id="@+id/Rules_ARS"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:inputType="textPersonName"
+                android:gravity="top|start"
+                android:hint="@string/Rules_ARS" />
+
+            <EditText
+                android:id="@+id/Description_ARS"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:inputType="textPersonName"
+                android:gravity="top|start"
+                android:hint="@string/Description_ARS" />
+
+            <EditText
+                android:id="@+id/Area_ARS"
+                android:inputType="numberDecimal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="top|start"
+                android:hint="@string/Area_ARS" />
+
+        </LinearLayout>
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/sourceimage_ARS"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_below="@+id/Scrollview_ARS"
+        android:text="@string/textView_image_ARS"/>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/SelectImageButton_ARS"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/sourceimage_ARS"
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="5dp"
+        android:src="@drawable/ic_plus"
+        app:backgroundTint="@color/colorPrimary"
+        app:rippleColor="@color/colorPrimary"
+        app:borderWidth="0dp"
+        app:elevation="4dp"
+        app:fabSize="mini" >
+
+    </android.support.design.widget.FloatingActionButton>
+
+    <ImageView
+        android:id="@+id/RoomImage_ARS"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginStart="41dp"
+        android:contentDescription="@string/ImageProfile_description"
+        android:src="@mipmap/ic_defaultimage"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/Scrollview_ARS" />
+
+    <Button
+        android:id="@+id/SaveButton_ARS"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAllCaps="false"
+        android:text="@string/SaveBtn_ARS"
+        android:layout_marginBottom="13dp"
+        android:layout_toStartOf="@+id/RoomImage_ARS"
+        android:layout_alignBottom="@+id/RoomImage_ARS"/>
+
+</RelativeLayout>

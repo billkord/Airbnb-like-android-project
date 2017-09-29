@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#cbe1db">
+
+    <ImageButton
+        android:id="@+id/SearchBackButton_PopUp"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/back_icon"
+        android:background="@null" />
+
+    <ScrollView
+        android:id="@+id/SearchScrollView_PopUp"
+        android:layout_width="match_parent"
+        android:layout_height="370dp"
+        android:layout_below="@+id/SearchBackButton_PopUp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/Country_PopUp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="54dp"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:hint="@string/country_popUp" />
+
+            <EditText
+                android:id="@+id/City_PopUp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="14dp"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:hint="@string/city_popUp"
+                android:visibility="gone" />
+
+            <EditText
+                android:id="@+id/Address_PopUp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:hint="@string/Address_ARS"
+                android:visibility="gone"
+                android:layout_marginTop="19dp" />
+
+            <EditText
+                android:id="@+id/DateFrom_PopUp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="21dp"
+                android:hint="@string/dateFrom_APS"
+                android:ems="10"
+                android:inputType="none"
+                android:focusable="false"
+                android:clickable="true" />
+
+            <EditText
+                android:id="@+id/DateTo_PopUp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="23dp"
+                android:hint="@string/dateTo_APS"
+                android:ems="10"
+                android:inputType="none"
+                android:focusable="false"
+                android:clickable="true" />
+
+            <EditText
+                android:id="@+id/People_PopUp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="22dp"
+                android:ems="10"
+                android:inputType="number"
+                android:hint="@string/people_APS" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/required_fields"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/SearchScrollView_PopUp"
+        android:text="@string/required_fields_APS"
+        android:textStyle="bold"/>
+
+
+    <Button
+        android:id="@+id/SearchConfirm_PopUp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/required_fields"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="21dp"
+        android:textAllCaps="false"
+        android:text="@string/search_popUp" />
+
+</RelativeLayout>
